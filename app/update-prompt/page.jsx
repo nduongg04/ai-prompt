@@ -23,8 +23,6 @@ const EditPrompt = () => {
                 prompt: data.prompt,
                 tag: data.tag,
             });
-
-            console.log(post);
         }
 
         if (promptId) getPromptDetails();
