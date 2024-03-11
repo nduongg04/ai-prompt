@@ -25,8 +25,6 @@ const PromptCard = ({ post, handleTagClick, handleEdit, handleDelete }) => {
         }, 3000);
     };
 
-    console.log(post);
-
     return (
         <div className="prompt_card">
             <div className="flex items-start justify-between w-full gap-5">

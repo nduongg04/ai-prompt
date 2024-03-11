@@ -40,7 +40,7 @@ const handler = NextAuth({
 				}
 				return true;
 			} catch (error) {
-				console.log(error, profile);
+				console.log(error);
 				return false;
 			}
 		},
