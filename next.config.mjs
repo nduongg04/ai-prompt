@@ -1,14 +1,17 @@
+import MillionLint from '@million/lint';
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-      images: {
-        domains: ['lh3.googleusercontent.com'],
-      },
-      webpack(config) {
-        config.experiments = {
-          ...config.experiments,
-          topLevelAwait: true,
-        }
-        return config
-      }
+  images: {
+    domains: ['lh3.googleusercontent.com']
+  },
+  webpack(config) {
+    config.experiments = {
+      ...config.experiments,
+      topLevelAwait: true
+    };
+    return config;
+  }
 };
-export default nextConfig;
+export default MillionLint.next({
+  rsc: true
+})(nextConfig);
